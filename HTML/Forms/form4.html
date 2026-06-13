@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        
+            <!-- <label for="loc">Location :</label> 
+            <select name="location" id="loc">
+                <option></option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Banglore" selected>Banglore</option>
+                <option value="Chennai" disabled>Chennai</option>
+                <option value="Pune">Pune</option>
+            </select> 
+            <br><br> -->
+
+        <label for="">Location:</label>
+        <input type="text" list="location" name="location">
+        <datalist id="location">
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Pune">Pune</option>
+        </datalist>         <br><br>
+
+        <label for="feedback">Feedback : </label>
+        <textarea name="feedback" id="feedback" rows="5" cols="40"
+        minlength="10" maxlength="20"></textarea>
+
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>

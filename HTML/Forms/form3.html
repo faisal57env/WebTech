@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" size="50" name="username" placeholder="Username" autocomplete="off" 
+            required minlength="3" maxlength="10" autofocus>      <br><br>
+        <input type="email" size="50" name="email" placeholder="Email" autocomplete="off" >  <br><br>
+        <input type="password" pattern="[a-z]" size="50" name="password" placeholder="Password" 
+           autocomplete="off">  <br><br>
+        <input type="number" name="age" placeholder="Age" step="10" min="18" max="50">         <br><br>
+        <input type="tel" name="deptno" value="45" readonly>                        <br><br>
+        <input type="file" name="resume" accept=".jpg,.png" multiple>                               <br><br>
+        
+        Gender :    
+        <input type="radio" name="gender" value="male"> male
+        <input type="radio" name="gender" value="female" checked> female
+        <input type="radio" name="gender" value="others" disabled> others       <br><br>
+
+        Languages :    
+        <input type="checkbox" name="language" value="english"> Englsh
+        <input type="checkbox" name="language" value="hindi" checked> Hindi
+        <input type="checkbox" name="language" value="telugu" disabled> Telugu
+
+        <br><br>
+        <button>Submit</button>
+    </form>
+
+    <!-- 
+        Attributes of input tag  
+        type            - Specifies the type of input (text, password, email, radio, etc.)
+        name            - Name of the input field used when submitting form data
+                        - used to send the data to backend
+        id              - give unique name 
+        value           - represents the default value of input 
+        src             - to give image path
+        placeholder     - gives the reference message
+        autocomplete    - on/off the suggestions
+        minlength       - minimum no. of characters in text field
+        maxlength       - maximum no. of characters in text field
+        min             - Minimum value for numeric/date inputs
+        max             - maximum value for numeric/date inputs
+        readonly        - ineditable
+        required        - makes the input field mandatory
+        autofocus       - focus the input field automatically
+        size            - width of input
+        pattern         - custom validation code using regEx
+        accept          - accept only files with particular extensions like .png , .jpg ..
+        multiple        - to select multiple files
+        step            - inc/dec the number
+        disabled        - diable radio / checkbox
+        checked         - preselects the radio/checkbox
+        list            - Connects input with a <datalist>
+    -->
+
+    <br><br><br><br><br><br><br><br><br> 
+</body>
+</html>
