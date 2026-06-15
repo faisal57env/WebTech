@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[required]{
+            border: 2px solid red;
+        }
+        input[type="password"]{
+            background-color: blue;
+        }
+        a[href^="https"] {      /* starts with */
+            color: green;
+        }
+        img[src$=".png"] {      /* ends with */
+            border: 2px solid blue;
+        }
+        div[class*="box"] {     /* contains */
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute selector</h1>
+    <p>It is used to target the elements based on the attribute name and its value.</p>
+
+    <input type="text" name="username" required>
+    <input type="email" name="email">
+    <input type="password" name="password" required>
+
+    <div class="test box demo"></div>
+
+</body>
+</html>

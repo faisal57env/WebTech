@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table>tbody>tr>td{color: red;}
+          table>thead>tr>th{color: blue;}  
+        */
+        /* table td{color: red;}
+           table th{color: blue;} 
+        */
+        /* table>tbody>tr>td+td{color: red;} */
+       /* table>tbody>tr>td+td+td{color: red;} */
+       /* table>tbody>tr+tr>td{color : red;} */
+       /* table>tbody>tr+tr+tr>td+td{color: red;} */
+       /* table>thead>tr>th+th{color: red;} */
+    </style>
+</head>
+<body>
+    table>thead>tr>th*3{Table heading}^^tbody>tr*3>td*3{table data}
+    <table border="5" cellpadding="20" align="center">
+        <thead>
+            <tr>
+                <th>Table heading</th>
+                <th>Table heading</th>
+                <th>Table heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table data</td>
+                <td>Table data</td>
+                <td>Table data</td>
+            </tr>
+            <tr>
+                <td>Table data</td>
+                <td>Table data</td>
+                <td>Table data</td>
+            </tr>
+            <tr>
+                <td>Table data</td>
+                <td>Table data</td>
+                <td>Table data</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

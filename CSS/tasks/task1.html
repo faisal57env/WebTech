@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 50px;
+            width: 200px;
+            word-spacing: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        button::before{
+            content: ''; 
+            height: 50px;
+            width: 0px;
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transition: all 2s;
+            z-index: 0;
+        }
+        button:hover::before{
+            width: 100%;
+        }
+        button>span{
+           position: relative;
+           z-index: 1;
+        }
+        button:hover span{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button><span>ADD TO CART</span></button>
+
+</body>
+</html>

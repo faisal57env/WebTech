@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* transition: height 2s,width 2s,background-color 2s;  */
+            transition: all 2s;
+        }
+        #div1:hover{
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>transition property</h1>
+    <p>It is used to change the values smoothly.</p>
+    <p>here we have to specify property name and duration</p>
+    <p>The shorthand property is <u>transition : all 2s;</u></p>
+    <div id="div1"></div>
+</body>
+</html>

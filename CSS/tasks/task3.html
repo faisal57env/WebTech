@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111;
+      }
+      button {
+        height: 60px;
+        width: 220px;
+        border: none;
+        background: #111;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      /* Rotating Gradient */
+      button::before {
+        content: "";
+        position: absolute;
+        width: 300%;
+        height: 300%;
+        background: conic-gradient( magenta, violet, blue, cyan, lime, yellow, red, magenta);
+        top: -100%;
+        left: -100%;
+        animation: rotateBorder 3s linear infinite;
+      }
+      /* Inner Black Layer */
+      button::after {
+        content: "";
+        position: absolute;
+        inset: 3px;
+        background: #111;
+        border-radius: 8px;
+      }
+      button span {
+        position: relative;
+        z-index: 1;
+      }
+      @keyframes rotateBorder {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button>
+      <span>ADD TO CART</span>
+    </button>
+  </body>
+</html>

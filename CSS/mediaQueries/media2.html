@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+        @media screen and (max-width : 600px){  /* 0 - 600px */
+            nav{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 601px){   /* >= 601px */
+            .menuIcon{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="" alt="logo">
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Services</a>
+        </nav>
+        <i class="fa-solid fa-bars menuIcon"></i>
+    </header>
+</body>
+</html>

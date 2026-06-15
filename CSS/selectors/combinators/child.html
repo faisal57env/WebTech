@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>h1{color: red;} /*targets all direct h1 tags in all divs*/
+        div>p{color: blue;} /*targets all direct p tags in all divs */        
+    </style>
+</head>
+<body>
+    <h1>Child combinator selector</h1>
+    <p>It is used to target only the direct members of the specified tag.</p>
+    <p>it is represented with >.</p>
+    <div>
+        <h1>direct member of div</h1>
+        <p>direct member of div</p>
+        <span>
+            <h1>indirect member of div</h1>
+            <p>indirect member of div</p>
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div~h1{color: red;}
+        div~p{color: blue;}
+        h1~p{color: aqua;}
+    </style>
+</head>
+<body>
+    <h1>General sibling combinator selector</h1>
+    <p>It is used to target all the specified sibling siblings.</p>
+    <p>it is represented with ~ </p>
+    <div>
+        <h1>direct member of div</h1>
+        <p>direct member of div</p>
+        <span>
+            <h1>indirect member of div</h1>
+            <p>indirect member of div</p>
+        </span>
+    </div>
+    <p>adjacent sib of div</p>
+    <p>sibling of div</p>
+    <p>sibling of div</p>
+</body>
+</html>
