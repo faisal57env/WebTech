@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            height: 400px;
+            width: 400px;
+            background: url(https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_1280.jpg) no-repeat center/cover;
+            /* background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; */
+            animation-name: changingImages;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes changingImages {
+            from{
+                background-image: url(https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_1280.jpg);
+            }
+            to{
+                background-image: url(https://cdn.pixabay.com/photo/2020/08/19/17/44/buzzard-5501613_1280.jpg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 3px solid red;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            height: 600px;
+        }
+        #parent>div{
+            color: white;
+        }
+        #child1{
+            grid-column: 1/3;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 30px;
+            background-color: green;
+        }
+        #child1 nav{
+            display: flex;
+            gap: 30px;
+        }
+        #child1 a{
+            text-decoration: none;
+            color: white;   
+        }
+        #child2{
+            grid-row: 2/4;
+            background-color: blue;
+        }
+        #child5{
+            grid-column: 1/3;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">
+            <img src="" alt="logo">
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+        <div id="child2">child2</div>
+        <div id="child3">child3</div>
+        <div id="child4">child4</div>
+        <div id="child5">child5</div>
+    </div>
+</body>
+</html>

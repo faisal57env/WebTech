@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            animation-name: movingElement;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; 
+        }
+        @keyframes movingElement {
+           0%{
+            margin-left: 0px;
+            margin-top: 0px;
+            border-radius: 0px;
+            background-color: cadetblue;
+           }
+           25%{
+            margin-left: 500px;
+            margin-top: 0px;
+            border-radius: 50%;
+            background-color: black;
+           }
+           50%{
+            margin-left: 500px;
+            margin-top: 300px;
+            border-radius: 50%;
+            background-color: chartreuse;
+           }
+           75%{
+            margin-left: 0px;
+            margin-top: 300px;
+            background-color: cadetblue;
+           }
+           100%{
+            margin-left: 0px;
+            margin-top: 0px;
+            background-color: crimson;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

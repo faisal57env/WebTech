@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            animation-name: zoomingElement;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes zoomingElement {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img id="img1" src="https://cdn.pixabay.com/photo/2026/02/18/17/50/studio_lichtfang-swan-10131341_1280.jpg" alt="">
+</body>
+</html>

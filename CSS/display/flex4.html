@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 3px solid red;
+            display: flex;
+            justify-content: space-around;
+            height: 150px;
+        }
+        #parent>div{
+            background-color: aqua;
+            border: 3px solid green;
+        }
+        #child1{flex-grow: 1;}
+        #child2{flex-grow: 2;}
+        #child3{flex-grow: 3;}
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">child1</div>
+        <div id="child2">child2</div>
+        <div id="child3">child3</div>
+    </div>
+</body>
+</html>

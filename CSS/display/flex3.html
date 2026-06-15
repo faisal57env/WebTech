@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{            
+            width: 200px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 20px;
+            background-color: cadetblue;
+            color: white;
+            transition: all 1s;
+        }
+        #parent{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #parent img{border-radius: 20px;}
+        #parent button{
+            border: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+        }
+        #parent p{
+            text-align: justify;
+            line-height: 25px;
+        }
+        .child:hover{
+            transform: translateY(-20px);
+        }
+    </style>
+</head>
+<body>
+   <div id="parent">
+        <div class="child">
+            <img height="100" width="100" src="https://cdn.pixabay.com/photo/2026/05/22/18/43/18-43-26-259_1280.jpg" alt="">
+            <h2>Bird</h2>
+            <p>Bird is beautiful. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, unde!</p>
+            <button>Know More...</button>
+        </div>
+        <div class="child">
+            <img height="100" width="100" src="https://cdn.pixabay.com/photo/2026/05/22/18/43/18-43-26-259_1280.jpg" alt="">
+            <h2>Bird</h2>
+            <p>Bird is beautiful. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, unde!</p>
+            <button>Know More...</button>
+        </div>
+        <div class="child">
+            <img height="100" width="100" src="https://cdn.pixabay.com/photo/2026/05/22/18/43/18-43-26-259_1280.jpg" alt="">
+            <h2>Bird</h2>
+            <p>Bird is beautiful. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, unde!</p>
+            <button>Know More...</button>
+        </div>
+        <div class="child">
+            <img height="100" width="100" src="https://cdn.pixabay.com/photo/2026/05/22/18/43/18-43-26-259_1280.jpg" alt="">
+            <h2>Bird</h2>
+            <p>Bird is beautiful. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, unde!</p>
+            <button>Know More...</button>
+        </div>
+   </div>
+</body>
+</html>
