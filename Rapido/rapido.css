@@ -1,0 +1,84 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+   
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
+    padding: 20px;
+    align-items: center;
+    background-color: white;
+}
+header>nav{
+    flex-grow: 3;
+    display: flex;
+    gap: 40px;
+    font-size: 25px;
+    align-items: center;
+}
+header>svg{
+    flex-grow: 2;
+}
+header>nav>a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+header>nav>button{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 24px;
+}
+
+/* sec1 starts */
+#sec1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 10px;
+    line-height: 70px;
+}
+#sec1 h1{
+    font-size: 50px;
+    
+}
+#sec1 p{
+    font-size: 25px;
+    color: rgb(71, 68, 68);
+}
+#sec1 form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#sec1 input{
+    width: 500px;
+    padding: 20px 60px;
+    border-radius: 10px;
+    border: 1px solid;
+    font-size: 20px;
+}
+#sec1 button{
+    width: 500px;
+    padding: 20px;
+    border: none;
+    background-color: rgb(255, 202, 32);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.pickupIcon,.dropIcon{
+    position: relative;
+    left: 50px;
+}
